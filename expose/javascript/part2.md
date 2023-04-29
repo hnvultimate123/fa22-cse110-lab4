@@ -33,7 +33,7 @@
      5.  false: true is converted to the number 1 which is not equal to 2, so false is returned.
      6.  true: Boolean(2) is true, which is strictly equal to 2.
  15. === is strict equals, meaning different types are always different, and if they are the same type, it checks equality as per normal. However, == will convert both operands to numbers if they are different (or will check equality normally otherwise), and will then check equality, leading to different results in certain cases.
- 16. [see part2-question16.js](expose\javascript\part2-question16.js)
+ 16. see part2-question16.js
  17. The result will be [2, 4, 6]. An empty array is first initialized when the modifyArray function is called, at which point the result of the "callback" function being called with the argument being each element in the array originally passed in is pushed to the new array. In this case, for the elements 1, 2, and 3, doSomething is called, and the result for each case is pushed. Thus, the result will be each element from the original array doubled.
- 18. [see part2-question18.js](expose\javascript\part2-question18.js)
+ 18. see part2-question18.js
  19. The output will be 1, 4, 3, 2 printed on separate lines to the console in that order.
